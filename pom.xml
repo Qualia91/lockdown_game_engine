@@ -18,6 +18,7 @@
         <module>../com.nick.wood.game_engine.control</module>
         <module>../com.nick.wood.game_engine.io</module>
         <module>../com.nick.wood.game_engine.model</module>
+        <module>../com.nick.wood.game_engine.core</module>
         <module>../com.nick.wood.game_engine.examples</module>
     </modules>
 
