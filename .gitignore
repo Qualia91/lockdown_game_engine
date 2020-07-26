@@ -17,8 +17,12 @@
 hs_err_pid*
 
 # intellij files
-.idea/
-*.iml
+.idea/libraries/
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml
 
 # build folders
 target/

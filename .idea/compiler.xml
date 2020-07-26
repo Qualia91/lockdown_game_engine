@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com.nick.wood.game_engine.core" />
+        <module name="com.nick.wood.game_engine.model" />
+        <module name="com.nick.wood.game_engine.event_bus" />
+        <module name="com.nick.wood.game_engine.systems" />
+        <module name="com.nick.wood.maths" />
+        <module name="com.nick.wood.graphics_library" />
+        <module name="com.nick.wood.physics_library" />
+        <module name="com.nick.wood.game_engine.control" />
+        <module name="com.nick.wood.game_engine.examples" />
+        <module name="com.nick.wood.game_engine.io" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.nick.wood.game_engine.control" target="11" />
+      <module name="com.nick.wood.game_engine.core" target="11" />
+      <module name="com.nick.wood.game_engine.event_bus" target="11" />
+      <module name="com.nick.wood.game_engine.examples" target="11" />
+      <module name="com.nick.wood.game_engine.io" target="11" />
+      <module name="com.nick.wood.game_engine.model" target="11" />
+      <module name="com.nick.wood.game_engine.systems" target="11" />
+      <module name="com.nick.wood.graphics_library" target="11" />
+      <module name="com.nick.wood.maths" target="11" />
+      <module name="com.nick.wood.physics_library" target="11" />
+      <module name="game_engine_build" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
