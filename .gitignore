@@ -30,3 +30,4 @@ out/
 
 # save files
 *.json
+/.idea/uiDesigner.xml

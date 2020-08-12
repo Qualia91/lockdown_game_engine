@@ -6,14 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.nick.wood.game_engine.core" />
+        <module name="com.nick.wood.graphics_library" />
+        <module name="com.nick.wood.game_engine.systems" />
         <module name="com.nick.wood.game_engine.model" />
         <module name="com.nick.wood.game_engine.event_bus" />
-        <module name="com.nick.wood.game_engine.systems" />
         <module name="com.nick.wood.maths" />
-        <module name="com.nick.wood.graphics_library" />
+        <module name="com.nick.wood.game_engine.core" />
         <module name="com.nick.wood.physics_library" />
-        <module name="com.nick.wood.game_engine.control" />
         <module name="com.nick.wood.game_engine.examples" />
         <module name="com.nick.wood.game_engine.io" />
       </profile>
