@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.graphics_library/com.nick.wood.graphics_library.iml" filepath="$PROJECT_DIR$/../com.nick.wood.graphics_library/com.nick.wood.graphics_library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.maths/com.nick.wood.maths.iml" filepath="$PROJECT_DIR$/../com.nick.wood.maths/com.nick.wood.maths.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.physics_library/com.nick.wood.physics_library.iml" filepath="$PROJECT_DIR$/../com.nick.wood.physics_library/com.nick.wood.physics_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.core/com.nick.wood.game_engine.core.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.core/com.nick.wood.game_engine.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.event_bus/com.nick.wood.game_engine.event_bus.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.event_bus/com.nick.wood.game_engine.event_bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.examples/com.nick.wood.game_engine.examples.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.examples/com.nick.wood.game_engine.examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.io/com.nick.wood.game_engine.io.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.io/com.nick.wood.game_engine.io.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.model/com.nick.wood.game_engine.model.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.model/com.nick.wood.game_engine.model.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.game_engine.systems/com.nick.wood.game_engine.systems.iml" filepath="$PROJECT_DIR$/../com.nick.wood.game_engine.systems/com.nick.wood.game_engine.systems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.graphics_library/com.nick.wood.graphics_library.iml" filepath="$PROJECT_DIR$/../com.nick.wood.graphics_library/com.nick.wood.graphics_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.maths/com.nick.wood.maths.iml" filepath="$PROJECT_DIR$/../com.nick.wood.maths/com.nick.wood.maths.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../com.nick.wood.physics_library/com.nick.wood.physics_library.iml" filepath="$PROJECT_DIR$/../com.nick.wood.physics_library/com.nick.wood.physics_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/game_engine_build.iml" filepath="$PROJECT_DIR$/game_engine_build.iml" />
     </modules>
   </component>
