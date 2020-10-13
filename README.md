@@ -25,3 +25,7 @@ game_engine_build: https://github.com/Qualia91/game_engine_build
 
 
 clone all repos into the same folder. Then look to com.nick.wood.game_engine.examples for how to use it!
+
+For a show Reel of the game engine, check out my youtube:
+
+https://www.youtube.com/channel/UCVmjxCnecANeiA-qFCO5DaA
