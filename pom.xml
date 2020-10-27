@@ -21,6 +21,7 @@
         <module>../com.nick.wood.physics_library</module>
         <module>../com.nick.wood.game_engine.event_bus</module>
         <module>../com.nick.wood.game_engine.io</module>
+        <module>../com.nick.wood.game_engine.gcs_model</module>
         <module>../com.nick.wood.game_engine.model</module>
         <module>../com.nick.wood.game_engine.systems</module>
         <module>../com.nick.wood.game_engine.core</module>
