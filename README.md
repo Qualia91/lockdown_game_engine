@@ -1,7 +1,7 @@
 ### LOCKDOWN GAME ENGINE
-![alt text](https://github.com/qualia91/game_engine_build/blob/default/images/gameEngineIconBlack.png?raw=true)
-![alt text](https://github.com/qualia91/game_engine_build/blob/default/images/titleScreen.png?raw=true)
-![alt text](https://github.com/qualia91/game_engine_build/blob/default/images/teraainGenOverview.png?raw=true)
+![Lockdown Game Engine](images/gameEngineIconBlack.png?raw=true)
+![Show Reel](images/titleScreen.png?raw=true)
+![Infinite Terrain Generation](images/teraainGenOverview.png?raw=true)
 
 For a Show Reel of the game engine, check out my youtube:
 https://www.youtube.com/channel/UCVmjxCnecANeiA-qFCO5DaA
