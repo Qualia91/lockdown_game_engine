@@ -1,5 +1,7 @@
-### LOCKDOWN GAME ENGINE
 ![Show Reel](images/titleScreen.png?raw=true)
+
+### Show Reel
+## Infinite Terrain Generation
 ![Infinite Terrain Generation](images/teraainGenOverview.png?raw=true)
 
 For a Show Reel of the game engine, check out my youtube:
