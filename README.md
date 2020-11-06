@@ -1,4 +1,4 @@
-### LOCKDOWN GAME ENGINE ![Lockdown Game Engine](images/gameEngineIconBlack.png?raw=true)
+### LOCKDOWN GAME ENGINE
 ![Show Reel](images/titleScreen.png?raw=true)
 ![Infinite Terrain Generation](images/teraainGenOverview.png?raw=true)
 
