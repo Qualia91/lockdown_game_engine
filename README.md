@@ -1,6 +1,10 @@
 ![Show Reel](images/titleScreen.png?raw=true)
+![Show Reel](images/progress2thumbnail.png?raw=true)
 
-### Show Reel
+## Boids Simulation
+![Infinite Terrain Generation](images/boidsStill.png?raw=true)
+## Instanced Rendering
+![Infinite Terrain Generation](images/instanceStill.png?raw=true)
 ## Infinite Terrain Generation
 ![Infinite Terrain Generation](images/teraainGenOverview.png?raw=true)
 
