@@ -11,7 +11,6 @@
         <module name="com.nick.wood.graphics_library" />
         <module name="com.nick.wood.physics_library" />
         <module name="com.nick.wood.maths" />
-        <module name="com.nick.wood.game_engine.io" />
         <module name="com.nick.wood.game_engine.examples" />
         <module name="com.nick.wood.game_engine.core" />
         <module name="com.nick.wood.game_engine.gcs_model" />
