@@ -35,13 +35,21 @@ game_engine_build: https://github.com/Qualia91/game_engine_build
 # Clone script below should do the trick:
 
 git clone https://github.com/qualia91/com.nick.wood.game_engine.core
+
 git clone https://github.com/qualia91/com.nick.wood.game_engine.event_bus
+
 git clone https://github.com/qualia91/com.nick.wood.game_engine.examples
+
 git clone https://github.com/qualia91/com.nick.wood.game_engine.gcs_model
+
 git clone https://github.com/qualia91/com.nick.wood.game_engine.systems
+
 git clone https://github.com/qualia91/com.nick.wood.graphics_library
+
 git clone https://github.com/qualia91/com.nick.wood.maths
+
 git clone https://github.com/qualia91/com.nick.wood.physics_library
+
 git clone https://github.com/qualia91/game_engine_build
 
 then you will need to navigate to com.nick.wood.game_engine.gcs_model\def and run generation.lua in lua to generate the java classes that define the gcs model.
