@@ -32,7 +32,8 @@ com.nick.wood.physics_library: https://github.com/Qualia91/com.nick.wood.physics
 
 game_engine_build: https://github.com/Qualia91/game_engine_build
 
-Clone script below should do the trick:
+# Clone script below should do the trick:
+
 git clone https://github.com/qualia91/com.nick.wood.game_engine.core
 git clone https://github.com/qualia91/com.nick.wood.game_engine.event_bus
 git clone https://github.com/qualia91/com.nick.wood.game_engine.examples
