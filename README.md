@@ -20,9 +20,7 @@ com.nick.wood.game_engine.event_bus: https://github.com/Qualia91/com.nick.wood.g
 
 com.nick.wood.game_engine.examples: https://github.com/Qualia91/com.nick.wood.game_engine.examples
 
-com.nick.wood.game_engine.io: https://github.com/Qualia91/com.nick.wood.game_engine.io
-
-com.nick.wood.game_engine.gcs_model: https://github.com/Qualia91/com.nick.wood.game_engine.model
+com.nick.wood.game_engine.gcs_model: https://github.com/Qualia91/com.nick.wood.game_engine.gcs_model
 
 com.nick.wood.game_engine.systems: https://github.com/Qualia91/com.nick.wood.game_engine.systems
 
