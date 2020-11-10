@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.game_engine.core" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.game_engine.event_bus" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.game_engine.examples" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.game_engine.gcs_model" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.game_engine.systems" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.graphics_library" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.maths" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../com.nick.wood.physics_library" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.lge_core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.event_bus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.lge_examples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.lge_model" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.lge_systems" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.graphics_library" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.maths" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../com.boc_dev.physics_library" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>game_engine_build</groupId>
-    <artifactId>game_engine_build</artifactId>
+    <groupId>lockdown_game_engine</groupId>
+    <artifactId>lockdown_game_engine</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -16,14 +16,14 @@
 
     <!-- sub modules -->
     <modules>
-        <module>../com.nick.wood.maths</module>
-        <module>../com.nick.wood.graphics_library</module>
-        <module>../com.nick.wood.physics_library</module>
-        <module>../com.nick.wood.game_engine.event_bus</module>
-        <module>../com.nick.wood.game_engine.gcs_model</module>
-        <module>../com.nick.wood.game_engine.systems</module>
-        <module>../com.nick.wood.game_engine.core</module>
-        <module>../com.nick.wood.game_engine.examples</module>
+        <module>../com.boc_dev.maths</module>
+        <module>../com.boc_dev.graphics_library</module>
+        <module>../com.boc_dev.physics_library</module>
+        <module>../com.boc_dev.event_bus</module>
+        <module>../com.boc_dev.lge_model</module>
+        <module>../com.boc_dev.lge_systems</module>
+        <module>../com.boc_dev.lge_core</module>
+        <module>../com.boc_dev.lge_examples</module>
     </modules>
 
     <build>
