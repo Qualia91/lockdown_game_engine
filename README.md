@@ -56,7 +56,7 @@ then you will need to navigate to com.boc_dev.lge_model\def and run generation.l
 
 Then look to com.boc_dev.lge_examples for how to use it!
 
-If you are using IDEA with this game engine, you may struggle with it not finding some dll's. this seems to be a bug with idea and maven, and i have no idea how to fix it other than downloading the necessary dlls from the lwjgl website and putting them in AppData\Local\Temp\lwjglnickw\3.2.3-build-13
+If you are using IDEA with this game engine, you may struggle with it not finding some dll's. this seems to be a bug with idea and maven, and i have no idea how to fix it other than downloading the necessary dlls from the lwjgl website and putting them in AppData\Local\Temp\lwjgl\3.2.3-build-13
 
 If anyone knows more about this, please let me know!
 
