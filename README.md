@@ -14,23 +14,23 @@ https://www.youtube.com/channel/UCVmjxCnecANeiA-qFCO5DaA
 ## Setup
 You will need all the following repo's to get the game engine working:
 
-com.nick.wood.game_engine.core: https://github.com/Qualia91/com.nick.wood.game_engine.core
+com.nick.wood.game_engine.core: https://github.com/Qualia91/com.boc_dev.lge_core
 
-com.nick.wood.game_engine.event_bus: https://github.com/Qualia91/com.nick.wood.game_engine.event_bus
+com.nick.wood.game_engine.event_bus: https://github.com/Qualia91/com.boc_dev.event_bus
 
-com.nick.wood.game_engine.examples: https://github.com/Qualia91/com.nick.wood.game_engine.examples
+com.nick.wood.game_engine.examples: https://github.com/Qualia91/com.boc_dev.lge_examples
 
-com.nick.wood.game_engine.gcs_model: https://github.com/Qualia91/com.nick.wood.game_engine.gcs_model
+com.nick.wood.game_engine.gcs_model: https://github.com/Qualia91/com.boc_dev.lge_model
 
-com.nick.wood.game_engine.systems: https://github.com/Qualia91/com.nick.wood.game_engine.systems
+com.nick.wood.game_engine.systems: https://github.com/Qualia91/com.boc_dev.lge_systems
 
-com.nick.wood.graphics_library: https://github.com/Qualia91/com.nick.wood.graphics_library
+com.nick.wood.graphics_library: https://github.com/Qualia91/com.boc_dev.graphics_library
 
-com.nick.wood.maths: https://github.com/Qualia91/com.nick.wood.maths
+com.nick.wood.maths: https://github.com/Qualia91/com.boc_dev.maths
 
-com.nick.wood.physics_library: https://github.com/Qualia91/com.nick.wood.physics_library
+com.nick.wood.physics_library: https://github.com/Qualia91/com.boc_dev.physics_library
 
-game_engine_build: https://github.com/Qualia91/game_engine_build
+game_engine_build: https://github.com/Qualia91/lockdown_game_engine
 
 # Clone script below should do the trick:
 
