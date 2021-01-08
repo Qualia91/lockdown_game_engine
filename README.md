@@ -24,6 +24,8 @@ com.nick.wood.game_engine.gcs_model: https://github.com/Qualia91/com.boc_dev.lge
 
 com.nick.wood.game_engine.systems: https://github.com/Qualia91/com.boc_dev.lge_systems
 
+com.nick.wood.lge_scripting: https://github.com/Qualia91/com.boc_dev.lge_scripting
+
 com.nick.wood.graphics_library: https://github.com/Qualia91/com.boc_dev.graphics_library
 
 com.nick.wood.maths: https://github.com/Qualia91/com.boc_dev.maths
@@ -44,6 +46,8 @@ git clone https://github.com/qualia91/com.boc_dev.lge_model
 
 git clone https://github.com/qualia91/com.boc_dev.lge_systems
 
+git clone https://github.com/qualia91/com.boc_dev.lge_scripting
+
 git clone https://github.com/qualia91/com.boc_dev.graphics_library
 
 git clone https://github.com/qualia91/com.boc_dev.maths
@@ -52,7 +56,11 @@ git clone https://github.com/qualia91/com.boc_dev.physics_library
 
 git clone https://github.com/qualia91/lockdown_game_engine
 
-then you will need to navigate to com.boc_dev.lge_model\def and run generation.lua in lua to generate the java classes that define the model.
+then you will need to navigate to com.boc_dev.lge_model\def and run generation.lua in lua to generate the java classes that define the model. 
+
+Lua Scripting Update:
+Due to the maven dist of lua not being compatible with java modules, i have includedd a module ready dist of lua in  com.boc_dev.lge_scripting/lib.
+To add this to your local maven repo, simple double click the maven_repo_builder.cmd file in that dir.
 
 Then look to com.boc_dev.lge_examples for how to use it!
 
