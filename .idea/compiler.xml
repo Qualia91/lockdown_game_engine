@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.boc_dev.lge_core" />
         <module name="com.boc_dev.physics_library" />
+        <module name="com.boc_dev.lge_core" />
+        <module name="com.boc_dev.lge_scripting" />
         <module name="com.boc_dev.event_bus" />
-        <module name="com.boc_dev.lge_model" />
         <module name="com.boc_dev.graphics_library" />
+        <module name="com.boc_dev.lge_model" />
         <module name="com.boc_dev.maths" />
         <module name="com.boc_dev.lge_systems" />
         <module name="com.boc_dev.lge_examples" />
@@ -22,6 +23,7 @@
       <module name="com.boc_dev.lge_core" target="11" />
       <module name="com.boc_dev.lge_examples" target="11" />
       <module name="com.boc_dev.lge_model" target="11" />
+      <module name="com.boc_dev.lge_scripting" target="11" />
       <module name="com.boc_dev.lge_systems" target="11" />
       <module name="com.boc_dev.maths" target="11" />
       <module name="com.boc_dev.physics_library" target="11" />

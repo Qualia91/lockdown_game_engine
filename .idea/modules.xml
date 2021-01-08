@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.lge_core/com.boc_dev.lge_core.iml" filepath="$PROJECT_DIR$/../com.boc_dev.lge_core/com.boc_dev.lge_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.lge_examples/com.boc_dev.lge_examples.iml" filepath="$PROJECT_DIR$/../com.boc_dev.lge_examples/com.boc_dev.lge_examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.lge_model/com.boc_dev.lge_model.iml" filepath="$PROJECT_DIR$/../com.boc_dev.lge_model/com.boc_dev.lge_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.lge_scripting/com.boc_dev.lge_scripting.iml" filepath="$PROJECT_DIR$/../com.boc_dev.lge_scripting/com.boc_dev.lge_scripting.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.lge_systems/com.boc_dev.lge_systems.iml" filepath="$PROJECT_DIR$/../com.boc_dev.lge_systems/com.boc_dev.lge_systems.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.maths/com.boc_dev.maths.iml" filepath="$PROJECT_DIR$/../com.boc_dev.maths/com.boc_dev.maths.iml" />
       <module fileurl="file://$PROJECT_DIR$/../com.boc_dev.physics_library/com.boc_dev.physics_library.iml" filepath="$PROJECT_DIR$/../com.boc_dev.physics_library/com.boc_dev.physics_library.iml" />

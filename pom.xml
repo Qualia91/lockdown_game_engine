@@ -20,6 +20,7 @@
         <module>../com.boc_dev.graphics_library</module>
         <module>../com.boc_dev.physics_library</module>
         <module>../com.boc_dev.event_bus</module>
+        <module>../com.boc_dev.lge_scripting</module>
         <module>../com.boc_dev.lge_model</module>
         <module>../com.boc_dev.lge_systems</module>
         <module>../com.boc_dev.lge_core</module>
