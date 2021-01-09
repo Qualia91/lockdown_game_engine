@@ -80,9 +80,9 @@ jobs:
         repository: qualia91/lockdown_game_engine
         path: lockdown_game_engine
         
-    - name: Install lua
-      uses: xpol/setup-lua@v1
-      
+    - name: Setup Lua/LuaJIT
+      uses: xpol/setup-lua@v0.2
+
     - name: Build components
       run: lua com.boc_dev.lge_model/def/generation.lua
   
