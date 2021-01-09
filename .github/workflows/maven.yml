@@ -79,6 +79,12 @@ jobs:
       with:
         repository: qualia91/lockdown_game_engine
         path: lockdown_game_engine
+        
+    - name: Install lua
+      uses: xpol/setup-lua@v1
+      
+    - name: Build components
+      run: lua com.boc_dev.lge_model/def/generation.lua
   
     - name: Build with Maven
       run: mvn -B package --file lockdown_game_engine/pom.xml
