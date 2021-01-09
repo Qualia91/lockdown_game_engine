@@ -81,7 +81,7 @@ jobs:
         path: lockdown_game_engine
     
     - name: Install lua
-      uses: leafo/gh-actions-lua@v8.0.0
+      uses: xpol/setup-lua@v1
 
     - name: Build components
       run: lua com.boc_dev.lge_model/def/generation.lua
