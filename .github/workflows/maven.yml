@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 11
     - name: Check out my other private repo
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
       with:
         repository: qualia91/com.boc_dev.maths
     - name: Build with Maven
