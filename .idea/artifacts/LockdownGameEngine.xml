@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LockdownGameEngine">
+    <output-path>$PROJECT_DIR$/out/artifacts/LockdownGameEngine</output-path>
+    <root id="archive" name="LockdownGameEngine.jar">
+      <element id="module-output" name="com.boc_dev.physics_library" />
+      <element id="module-output" name="com.boc_dev.maths" />
+      <element id="module-output" name="com.boc_dev.lge_systems" />
+      <element id="module-output" name="com.boc_dev.lge_scripting" />
+      <element id="module-output" name="com.boc_dev.lge_model" />
+      <element id="module-output" name="com.boc_dev.lge_examples" />
+      <element id="module-output" name="com.boc_dev.lge_core" />
+      <element id="module-output" name="com.boc_dev.graphics_library" />
+      <element id="module-output" name="com.boc_dev.event_bus" />
+    </root>
+  </artifact>
+</component>
