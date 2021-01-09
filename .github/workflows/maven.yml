@@ -21,4 +21,5 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
+      working-directory: lockdown_game_engine
       run: mvn -B package --file pom.xml
