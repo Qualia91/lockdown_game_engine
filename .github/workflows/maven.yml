@@ -23,13 +23,13 @@ jobs:
     - name: Checkout com.boc_dev.maths
       uses: actions/checkout@v2
       with:
-        repository: com.boc_dev.maths
+        repository: qualia91/com.boc_dev.maths
         path: com.boc_dev.maths
 
     - name: Checkout lockdown_game_engine
       uses: actions/checkout@v2
       with:
-        repository: lockdown_game_engine
+        repository: qualia91/lockdown_game_engine
         path: lockdown_game_engine
   
     - name: Build with Maven
