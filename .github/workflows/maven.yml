@@ -87,7 +87,9 @@ jobs:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
     - name: Build components
-      run: lua com.boc_dev.lge_model/def/generation.lua
+      run: lua generation.lua
+      working-directory: com.boc_dev.lge_model/def/
   
     - name: Build with Maven
-      run: mvn -B package --file lockdown_game_engine/pom.xml
+      run: mvn -B package --file pom.xml
+      working-directory: ../
