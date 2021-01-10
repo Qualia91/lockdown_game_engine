@@ -1,3 +1,5 @@
+![Build](https://github.com/qualia91/com.boc_dev.lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg)
+
 ![Show Reel](images/titleScreen.png?raw=true)
 ![Show Reel](images/progress2thumbnail.png?raw=true)
 
@@ -32,6 +34,10 @@ com.nick.wood.maths: https://github.com/Qualia91/com.boc_dev.maths
 
 com.nick.wood.physics_library: https://github.com/Qualia91/com.boc_dev.physics_library
 
+com.nick.wood.lge_scripts: https://github.com/Qualia91/com.boc_dev.lge_scripts
+
+com.nick.wood.lge_lua_front_end: https://github.com/Qualia91/com.boc_dev.lge_lua_front_end
+
 game_engine_build: https://github.com/Qualia91/lockdown_game_engine
 
 # Clone script below should do the trick:
@@ -55,6 +61,10 @@ git clone https://github.com/qualia91/com.boc_dev.maths
 git clone https://github.com/qualia91/com.boc_dev.physics_library
 
 git clone https://github.com/qualia91/lockdown_game_engine
+
+git clone https://github.com/qualia91/com.boc_dev.lge_scripts
+
+git clone https://github.com/qualia91/com.boc_dev.lge_lua_front_end
 
 then you will need to navigate to com.boc_dev.lge_model\def and run generation.lua in lua to generate the java classes that define the model. 
 

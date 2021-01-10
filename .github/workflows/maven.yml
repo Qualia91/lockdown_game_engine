@@ -1,0 +1,99 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Lockdown Game Engine
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+      
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+        
+    - name: Checkout com.boc_dev.lge_scripting
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_scripting
+        path: com.boc_dev.lge_scripting
+
+    - name: Build luaj-jse-modules .m2 library
+      run: ./maven_repo_builder.cmd
+      working-directory: com.boc_dev.lge_scripting/lib/
+        
+    - name: Checkout com.boc_dev.lge_core
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_core
+        path: com.boc_dev.lge_core
+        
+    - name: Checkout com.boc_dev.maths
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.maths
+        path: com.boc_dev.maths
+        
+    - name: Checkout com.boc_dev.event_bus
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.event_bus
+        path: com.boc_dev.event_bus
+        
+    - name: Checkout com.boc_dev.lge_examples
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_examples
+        path: com.boc_dev.lge_examples
+        
+    - name: Checkout com.boc_dev.lge_model
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_model
+        path: com.boc_dev.lge_model
+        
+    - name: Checkout com.boc_dev.lge_systems
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_systems
+        path: com.boc_dev.lge_systems
+        
+    - name: Checkout com.boc_dev.graphics_library
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.graphics_library
+        path: com.boc_dev.graphics_library
+        
+    - name: Checkout com.boc_dev.physics_library
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.physics_library
+        path: com.boc_dev.physics_library
+
+    - name: Checkout lockdown_game_engine
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/lockdown_game_engine
+        path: lockdown_game_engine
+    
+    - name: Install lua
+      uses: xpol/setup-lua@v0.2
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+
+    - name: Build components
+      run: lua generation.lua
+      working-directory: com.boc_dev.lge_model/def/
+  
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+      working-directory: lockdown_game_engine/
