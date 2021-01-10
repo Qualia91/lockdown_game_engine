@@ -1,4 +1,7 @@
-![Build](https://github.com/qualia91/lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg)
+
+<p align='center'>
+  <img src="https://github.com/qualia91/lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg"/>
+</p>
 
 ![Show Reel](images/titleScreen.png?raw=true)
 ![Show Reel](images/progress2thumbnail.png?raw=true)
