@@ -15,6 +15,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: allow commands
+      run: echo 'ACTIONS_ALLOW_UNSECURE_COMMANDS=true' >> $GITHUB_ENV
+      
     - name: Set up JDK 11
       uses: actions/setup-java@v1
       with:
