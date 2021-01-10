@@ -21,6 +21,16 @@ jobs:
       with:
         java-version: 11
         
+    - name: Checkout com.boc_dev.lge_scripting
+      uses: actions/checkout@v2
+      with:
+        repository: qualia91/com.boc_dev.lge_scripting
+        path: com.boc_dev.lge_scripting
+
+    - name: Build luaj-jse-modules .m2 library
+      run: ./maven_repo_builder.cmd
+      working-directory: com.boc_dev.lge_scripting/lib/
+        
     - name: Checkout com.boc_dev.lge_core
       uses: actions/checkout@v2
       with:
@@ -57,12 +67,6 @@ jobs:
         repository: qualia91/com.boc_dev.lge_systems
         path: com.boc_dev.lge_systems
         
-    - name: Checkout com.boc_dev.lge_scripting
-      uses: actions/checkout@v2
-      with:
-        repository: qualia91/com.boc_dev.lge_scripting
-        path: com.boc_dev.lge_scripting
-        
     - name: Checkout com.boc_dev.graphics_library
       uses: actions/checkout@v2
       with:
@@ -89,10 +93,6 @@ jobs:
     - name: Build components
       run: lua generation.lua
       working-directory: com.boc_dev.lge_model/def/
-
-    - name: Build luaj-jse-modules .m2 library
-      run: maven_repo_builder.cmd
-      working-directory: com.boc_dev.lge_scripting/lib/
   
     - name: Build with Maven
       run: mvn -B package --file lockdown_game_engine/pom.xml
