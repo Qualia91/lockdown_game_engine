@@ -95,4 +95,5 @@ jobs:
       working-directory: com.boc_dev.lge_model/def/
   
     - name: Build with Maven
-      run: mvn -B package --file lockdown_game_engine/pom.xml
+      run: mvn -B package --file pom.xml
+      working-directory: lockdown_game_engine/
