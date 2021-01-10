@@ -91,7 +91,8 @@ jobs:
       working-directory: com.boc_dev.lge_model/def/
 
     - name: Build luaj-jse-modules .m2 library
-      run: com.boc_dev.lge_scripting/lib/maven_repo_builder.cmd
+      run: maven_repo_builder.cmd
+      working-directory: com.boc_dev.lge_scripting/lib/
   
     - name: Build with Maven
       run: mvn -B package --file lockdown_game_engine/pom.xml
