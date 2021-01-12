@@ -4,9 +4,9 @@
 
 <p align='center'>
   <img src="https://github.com/qualia91/lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg"/>
-  <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/qualia91/lockdown_game_engine/blob/master/LICENSE"/>
+<!--   <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/qualia91/lockdown_game_engine/blob/master/LICENSE"/>
   <img src="https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/qualia91/lockdown_game_engine/releases/">
-  <img src="https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/qualia91/lockdown_game_engine/releases/"/>
+  <img src="https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://github.com/Qualia91/lockdown_game_engine/releases/tag/v1.0.0"/> -->
   <img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/"/>
 </p>
 
