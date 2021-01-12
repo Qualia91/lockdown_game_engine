@@ -1,6 +1,6 @@
-<p align='center'>
-  <h1>LOCKDOWN GAME ENGINE</h>
-</p>
+<h1 align='center'>
+  LOCKDOWN GAME ENGINE
+</h1>
 
 <p align='center'>
   <img src="https://github.com/qualia91/lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg"/>
