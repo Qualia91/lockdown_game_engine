@@ -24,8 +24,8 @@
   </a>&nbsp;&nbsp;
 </p>
 
+
 ![Show Reel](images/titleScreen.png?raw=true)
-![Show Reel](images/progress2thumbnail.png?raw=true)
 ![Infinite Terrain Generation](images/boidsStill.png?raw=true)
 ![Infinite Terrain Generation](images/instanceStill.png?raw=true)
 
