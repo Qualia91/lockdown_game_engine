@@ -1,22 +1,48 @@
+<p align='center'>
+  <h1>LOCKDOWN GAME ENGINE</h>
+</p>
 
 <p align='center'>
   <img src="https://github.com/qualia91/lockdown_game_engine/workflows/Lockdown%20Game%20Engine/badge.svg"/>
+  <img src="https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/qualia91/lockdown_game_engine/blob/master/LICENSE"/>
+  <img src="https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/qualia91/lockdown_game_engine/releases/">
+  <img src="https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/qualia91/lockdown_game_engine/releases/"/>
+  <img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/"/>
+</p>
+
+<p align='center'>
+  <img src="https://img.shields.io/badge/Java-00ADD8?logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lua-00ADD8?logo=lua&logoColor=white" />
+</p>
+
+<details>
+  <summary>Show Reel</summary>
+  
+  <p align='center'>
+  <a href="https://www.youtube.com/channel/UCVmjxCnecANeiA-qFCO5DaA">
+    <img src="https://img.shields.io/badge/SHOWREEL-%230077B5.svg?&style=for-the-badge&logo=youtube&logoColor=white" />       
+  </a>&nbsp;&nbsp;
 </p>
 
 ![Show Reel](images/titleScreen.png?raw=true)
 ![Show Reel](images/progress2thumbnail.png?raw=true)
-
-## Boids Simulation
 ![Infinite Terrain Generation](images/boidsStill.png?raw=true)
-## Instanced Rendering
 ![Infinite Terrain Generation](images/instanceStill.png?raw=true)
-## Infinite Terrain Generation
-![Infinite Terrain Generation](images/teraainGenOverview.png?raw=true)
 
-For a Show Reel of the game engine, check out my youtube:
-https://www.youtube.com/channel/UCVmjxCnecANeiA-qFCO5DaA
+</details>
 
-## Setup
+
+<details>
+  <summary>How to use release</summary>
+  
+  
+  
+</details>
+
+<details>
+  <summary>How to develop</summary>
+  
+  ## Setup
 You will need all the following repo's to get the game engine working:
 
 com.nick.wood.game_engine.core: https://github.com/Qualia91/com.boc_dev.lge_core
@@ -80,4 +106,8 @@ Then look to com.boc_dev.lge_examples for how to use it!
 If you are using IDEA with this game engine, you may struggle with it not finding some dll's. this seems to be a bug with idea and maven, and i have no idea how to fix it other than downloading the necessary dlls from the lwjgl website and putting them in AppData\Local\Temp\lwjgl\3.2.3-build-13
 
 If anyone knows more about this, please let me know!
+  
+</details>
+
+
 
