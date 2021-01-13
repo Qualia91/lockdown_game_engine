@@ -8,6 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="com.boc_dev.lge_scripting" />
     <orderEntry type="module" module-name="com.boc_dev.lge_model" />
     <orderEntry type="module" module-name="com.boc_dev.maths" />
     <orderEntry type="module" module-name="com.boc_dev.physics_library" />
@@ -85,7 +86,6 @@
     <orderEntry type="module" module-name="com.boc_dev.event_bus" />
     <orderEntry type="module" module-name="com.boc_dev.lge_core" />
     <orderEntry type="module" module-name="com.boc_dev.lge_systems" />
-    <orderEntry type="module" module-name="com.boc_dev.lge_scripting" />
     <orderEntry type="module" module-name="com.boc_dev.lge_examples" />
     <orderEntry type="library" name="Maven: org.luaj:luaj-jse-modules:3.0.1" level="project" />
   </component>
