@@ -46,107 +46,195 @@ The file in this repo called game_scene.lua is the one that can be provided as a
 ```
 java -jar .\lockdown_game_engine-1.0.0.jar <PATH_TO_REPO>/com.boc_dev.lge_lua_front_end/game_scene.lua
 ```
+
 <h1 align='center'>Game Model</h1>
 <details><summary>Components</summary>
 <h2>ParticleSpring (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>dampingConstant (<i>float</i>): </p><p>springConstant (<i>float</i>): </p><p>restLength (<i>float</i>): </p><h2>Pickable (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>active (<i>boolean</i>): </p><h2>List (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>spacerZ (<i>float</i>): space each object is from the next one in the z axis</p><p>indentZ (<i>float</i>): indent of a sub list in the z axis</p><p>spacerY (<i>float</i>): space each object is from the next one in the y axis</p><p>indentY (<i>float</i>): indent of a sub list in the y axis</p><h2>Button (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>functionName (<i>String</i>): this will be the name of what function is activated when this button is pressed</p><p>active (<i>boolean</i>): </p><h2>Timer (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>active (<i>boolean</i>): </p><p>timeoutFlag (<i>boolean</i>): </p><p>functionName (<i>String</i>): this will be the name of what function is ativated when this timer runs out</p><p>timeoutLength (<i>long</i>): </p><p>repeate (<i>boolean</i>): </p><p>startFrame (<i>long</i>): </p><h2>MarchingCubeGeneration (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>materialID (<i>UUID</i>): </p><p>chunkSize (<i>int</i>): </p><p>generationRange (<i>int</i>): </p><h2>SelectedItems (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>pickingHappened (<i>boolean</i>): Flag to tell selection system that a picking event occured and selection needs to clear and update</p><h2>Mesh (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>vertexPositions (<i>com.boc_dev.maths.objects.vector.Vec3f[]</i>): </p><p>materialID (<i>UUID</i>): </p><p>index (<i>com.boc_dev.maths.objects.vector.Vec3i</i>): </p><h2>TerrainGeneration (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>octaves (<i>int</i>): </p><p>segmentSize (<i>int</i>): </p><p>lacunarity (<i>float</i>): </p><p>materialID (<i>UUID</i>): </p><p>amplitude (<i>int</i>): </p><p>chunkSize (<i>int</i>): </p><p>cellSpace (<i>int</i>): </p><p>generationRange (<i>int</i>): </p><h2>Light (Renderable)</h2>
-<p>Component that gets affected by the rigid body system. It must be under a transform, and thats the one that gets transformed.</p>
-<h3>Fields:</h3>
-<p>attenuationExponent (<i>float</i>): </p><p>coneAngle (<i>float</i>): </p><p>attenuationLinear (<i>float</i>): </p><p>attenuationConstant (<i>float</i>): </p><p>colour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>lightingType (<i>LightingType</i>): light type</p><p>direction (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>intensity (<i>float</i>): </p><h2>NormalMap (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>path (<i>String</i>): </p><h2>Collision (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>collisionRestitution (<i>float</i>): </p><h2>Transform (Not Renderable)</h2>
-<p>Transform of an object. Will affect the objects underneath it.</p>
-<h3>Fields:</h3>
-<p>scale (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): scale component of transform</p><p>position (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): positon component of transform</p><p>rotation (<i>com.boc_dev.maths.objects.QuaternionF</i>): rotation component of transform</p><h2>ViscousDrag (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>coefficientOfDrag (<i>float</i>): </p><h2>RigidBody (Not Renderable)</h2>
-<p>Component that gets affected by the rigid body system. It must be under a transform, and thats the one that gets transformed.</p>
-<h3>Fields:</h3>
-<p>mass (<i>double</i>): Mass in kg's of entity.</p><p>linearMomentum (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): linearMomentum of entity.</p><p>rigidBodyType (<i>RigidBodyObjectType</i>): Type of rigid body.</p><p>angularMomentum (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): angularMomentum of entity</p><p>dimensions (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): Dimensions of entity.</p><h2>Texture (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>path (<i>String</i>): </p><h2>SkyBox (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>skyboxType (<i>SkyboxType</i>): Type of geometry used to make sykbox. Can be CUBE or SPHERE</p><p>distance (<i>float</i>): Distance the skybox is rendered at</p><p>texture (<i>String</i>): Texture of the skybox</p><h2>Controllable (Not Renderable)</h2>
-<p>Object that enables user control to a transform it is under.</p>
-<h3>Fields:</h3>
-<p>sensitivity (<i>float</i>): rotation speed</p><p>enableLook (<i>boolean</i>): Can rotate object</p><p>speed (<i>float</i>): translate speed</p><p>enableMove (<i>boolean</i>): Can translate object</p><h2>Script (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>script (<i>String</i>): Lua Script file. This is searched for within </p><h2>ParticleBody (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>mass (<i>float</i>): </p><p>velocity (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): </p><h2>TerrainChunk (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>materialID (<i>UUID</i>): </p><p>origin (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>grid (<i>float[][]</i>): </p><p>cellSpace (<i>double</i>): </p><p>index (<i>com.boc_dev.maths.objects.vector.Vec2i</i>): </p><h2>Selectable (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>selectedMaterialUUID (<i>UUID</i>): </p><p>selected (<i>boolean</i>): </p><p>unselectedMaterialUUID (<i>UUID</i>): </p><h2>WaterGeneration (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>chunkSize (<i>int</i>): </p><p>cellSpace (<i>int</i>): </p><p>height (<i>int</i>): </p><h2>Impulse (Not Renderable)</h2>
-<p>Impulse given from player.</p>
-<h3>Fields:</h3>
-<p>linearVelocityImpulse (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): linear velocity impulse of entity</p><p>angularVelocityImpulse (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): angular velocity impulse of entity</p><h2>Camera (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>width (<i>int</i>): </p><p>cameraObjectType (<i>CameraObjectType</i>): </p><p>far (<i>float</i>): </p><p>near (<i>float</i>): </p><p>CameraProjectionType (<i>CameraProjectionType</i>): </p><p>height (<i>int</i>): </p><p>fov (<i>float</i>): </p><h2>Geometry (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>localTransformation (<i>com.boc_dev.maths.objects.matrix.Matrix4f</i>): </p><p>material (<i>UUID</i>): </p><p>modelFile (<i>String</i>): </p><h2>WaterChunk (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>cellSpace (<i>int</i>): </p><p>grid (<i>float[][]</i>): </p><h2>ImpulseControllable (Not Renderable)</h2>
-<p>Object that enables user control to a transform it is under via linear and angular momentum impulses.</p>
-<h3>Fields:</h3>
-<p>angularSpeed (<i>float</i>): Rotation speed.</p><p>enableRotate (<i>boolean</i>): Can rotate object.</p><p>linearSpeed (<i>float</i>): Translate speed.</p><p>enableMove (<i>boolean</i>): Can translate object.</p><h2>Gravity (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>simple (<i>boolean</i>): If simple gravity is true, each object is accelerated towards negative z axis. If false, it uses universal law of gravitation</p><p>G (<i>float</i>): Gravitational</p><h2>Material (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>specularColour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>diffuseColour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>reflectance (<i>float</i>): </p><p>shininess (<i>float</i>): </p><h2>Boid (Not Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>velocity (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><p>minSpeed (<i>float</i>): </p><p>lengthAwayGroupSquared (<i>float</i>): </p><p>lengthAwayMinSquared (<i>float</i>): </p><p>antiCollideScale (<i>float</i>): </p><p>perceivedCenterScale (<i>float</i>): </p><p>velocityMatchScale (<i>float</i>): </p><p>boundScale (<i>float</i>): </p><p>speed (<i>float</i>): </p><p>radius (<i>float</i>): </p><p>goal (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p><h2>Text (Renderable)</h2>
-<p></p>
-<h3>Fields:</h3>
-<p>fontAlignment (<i>FontAlignment</i>): </p><p>fontSize (<i>float</i>): </p><p>fontName (<i>String</i>): </p><p>text (<i>String</i>): </p></details>
-<details><summary>Enumerations</summary><h2>CameraObjectType</h2><p>PRIMARY, FBO, </p><h2>LightingType</h2><p>POINT, SPOT, DIRECTIONAL, </p><h2>FontAlignment</h2><p>BEGIN, END, CENTER, </p><h2>CollisionShape</h2><p>SPEHER, CUBOID, </p><h2>SkyboxType</h2><p>SPHERE, CUBE, </p><h2>RigidBodyObjectType</h2><p>CUBOID, SPHERE, SPHERE_INNER, NONE, </p><h2>CameraProjectionType</h2><p>PERSPECTIVE, ORTHOGRAPHIC, </p><h2>Orientation</h2><p>HORIZONTAL, VERTICLE, </p><h2>TextureType</h2><p>VISUAL, NORMAL, </p></details>
-
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.ParticleSpring.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>dampingConstant (<i>float</i>): </p></li><li><p>springConstant (<i>float</i>): </p></li><li><p>restLength (<i>float</i>): </p></li></ol>
+<h2>Pickable (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Pickable.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>active (<i>boolean</i>): </p></li></ol>
+<h2>List (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.List.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>spacerZ (<i>float</i>): space each object is from the next one in the z axis</p></li><li><p>indentZ (<i>float</i>): indent of a sub list in the z axis</p></li><li><p>spacerY (<i>float</i>): space each object is from the next one in the y axis</p></li><li><p>indentY (<i>float</i>): indent of a sub list in the y axis</p></li></ol>
+<h2>Button (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Button.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>functionName (<i>String</i>): this will be the name of what function is activated when this button is pressed</p></li><li><p>active (<i>boolean</i>): </p></li></ol>
+<h2>Timer (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Timer.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>active (<i>boolean</i>): </p></li><li><p>timeoutFlag (<i>boolean</i>): </p></li><li><p>functionName (<i>String</i>): this will be the name of what function is ativated when this timer runs out</p></li><li><p>timeoutLength (<i>long</i>): </p></li><li><p>repeate (<i>boolean</i>): </p></li><li><p>startFrame (<i>long</i>): </p></li></ol>
+<h2>MarchingCubeGeneration (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.MarchingCubeGeneration.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>materialID (<i>UUID</i>): </p></li><li><p>chunkSize (<i>int</i>): </p></li><li><p>generationRange (<i>int</i>): </p></li></ol>
+<h2>SelectedItems (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.SelectedItems.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>pickingHappened (<i>boolean</i>): Flag to tell selection system that a picking event occured and selection needs to clear and update</p></li></ol>
+<h2>Mesh (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Mesh.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>vertexPositions (<i>com.boc_dev.maths.objects.vector.Vec3f[]</i>): </p></li><li><p>materialID (<i>UUID</i>): </p></li><li><p>index (<i>com.boc_dev.maths.objects.vector.Vec3i</i>): </p></li></ol>
+<h2>TerrainGeneration (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.TerrainGeneration.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>octaves (<i>int</i>): </p></li><li><p>segmentSize (<i>int</i>): </p></li><li><p>lacunarity (<i>float</i>): </p></li><li><p>materialID (<i>UUID</i>): </p></li><li><p>amplitude (<i>int</i>): </p></li><li><p>chunkSize (<i>int</i>): </p></li><li><p>cellSpace (<i>int</i>): </p></li><li><p>generationRange (<i>int</i>): </p></li></ol>
+<h2>Light (Renderable)</h2>
+<p><b>Description:</b> Component that gets affected by the rigid body system. It must be under a transform, and thats the one that gets transformed.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Light.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>attenuationExponent (<i>float</i>): </p></li><li><p>coneAngle (<i>float</i>): </p></li><li><p>attenuationLinear (<i>float</i>): </p></li><li><p>attenuationConstant (<i>float</i>): </p></li><li><p>colour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>lightingType (<i>LightingType</i>): light type</p></li><li><p>direction (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>intensity (<i>float</i>): </p></li></ol>
+<h2>NormalMap (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.NormalMap.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>path (<i>String</i>): </p></li></ol>
+<h2>Collision (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Collision.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>collisionRestitution (<i>float</i>): </p></li></ol>
+<h2>Transform (Not Renderable)</h2>
+<p><b>Description:</b> Transform of an object. Will affect the objects underneath it.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Transform.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>scale (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): scale component of transform</p></li><li><p>position (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): positon component of transform</p></li><li><p>rotation (<i>com.boc_dev.maths.objects.QuaternionF</i>): rotation component of transform</p></li></ol>
+<h2>ViscousDrag (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.ViscousDrag.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>coefficientOfDrag (<i>float</i>): </p></li></ol>
+<h2>RigidBody (Not Renderable)</h2>
+<p><b>Description:</b> Component that gets affected by the rigid body system. It must be under a transform, and thats the one that gets transformed.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.RigidBody.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>mass (<i>double</i>): Mass in kg's of entity.</p></li><li><p>linearMomentum (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): linearMomentum of entity.</p></li><li><p>rigidBodyType (<i>RigidBodyObjectType</i>): Type of rigid body.</p></li><li><p>angularMomentum (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): angularMomentum of entity</p></li><li><p>dimensions (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): Dimensions of entity.</p></li></ol>
+<h2>Texture (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Texture.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>path (<i>String</i>): </p></li></ol>
+<h2>SkyBox (Renderable)</h2>
+<p><b>Description:</b> Skybox used in scene.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.SkyBox.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>skyboxType (<i>SkyboxType</i>): Type of geometry used to make sykbox. Can be CUBE or SPHERE</p></li><li><p>distance (<i>float</i>): Distance the skybox is rendered at</p></li><li><p>texture (<i>String</i>): Texture of the skybox</p></li></ol>
+<h2>Controllable (Not Renderable)</h2>
+<p><b>Description:</b> Object that enables user control to a transform it is under.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Controllable.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>sensitivity (<i>float</i>): rotation speed</p></li><li><p>enableLook (<i>boolean</i>): Can rotate object</p></li><li><p>speed (<i>float</i>): translate speed</p></li><li><p>enableMove (<i>boolean</i>): Can translate object</p></li></ol>
+<h2>Script (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Script.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>script (<i>String</i>): Lua Script file. This is searched for within </p></li></ol>
+<h2>ParticleBody (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.ParticleBody.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>mass (<i>float</i>): </p></li><li><p>velocity (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): </p></li></ol>
+<h2>TerrainChunk (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.TerrainChunk.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>materialID (<i>UUID</i>): </p></li><li><p>origin (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>grid (<i>float[][]</i>): </p></li><li><p>cellSpace (<i>double</i>): </p></li><li><p>index (<i>com.boc_dev.maths.objects.vector.Vec2i</i>): </p></li></ol>
+<h2>Selectable (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Selectable.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>selectedMaterialUUID (<i>UUID</i>): </p></li><li><p>selected (<i>boolean</i>): </p></li><li><p>unselectedMaterialUUID (<i>UUID</i>): </p></li></ol>
+<h2>WaterGeneration (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.WaterGeneration.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>chunkSize (<i>int</i>): </p></li><li><p>cellSpace (<i>int</i>): </p></li><li><p>height (<i>int</i>): </p></li></ol>
+<h2>Impulse (Not Renderable)</h2>
+<p><b>Description:</b> Impulse given from player.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Impulse.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>linearVelocityImpulse (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): linear velocity impulse of entity</p></li><li><p>angularVelocityImpulse (<i>com.boc_dev.maths.objects.vector.Vec3d</i>): angular velocity impulse of entity</p></li></ol>
+<h2>Camera (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Camera.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>width (<i>int</i>): </p></li><li><p>cameraObjectType (<i>CameraObjectType</i>): </p></li><li><p>far (<i>float</i>): </p></li><li><p>near (<i>float</i>): </p></li><li><p>CameraProjectionType (<i>CameraProjectionType</i>): </p></li><li><p>height (<i>int</i>): </p></li><li><p>fov (<i>float</i>): </p></li></ol>
+<h2>Geometry (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Geometry.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>localTransformation (<i>com.boc_dev.maths.objects.matrix.Matrix4f</i>): </p></li><li><p>material (<i>UUID</i>): </p></li><li><p>modelFile (<i>String</i>): </p></li></ol>
+<h2>WaterChunk (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.WaterChunk.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>cellSpace (<i>int</i>): </p></li><li><p>grid (<i>float[][]</i>): </p></li></ol>
+<h2>ImpulseControllable (Not Renderable)</h2>
+<p><b>Description:</b> Object that enables user control to a transform it is under via linear and angular momentum impulses.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.ImpulseControllable.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>angularSpeed (<i>float</i>): Rotation speed.</p></li><li><p>enableRotate (<i>boolean</i>): Can rotate object.</p></li><li><p>linearSpeed (<i>float</i>): Translate speed.</p></li><li><p>enableMove (<i>boolean</i>): Can translate object.</p></li></ol>
+<h2>Gravity (Not Renderable)</h2>
+<p><b>Description:</b> Component to enable gravity on transform object above.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Gravity.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>simple (<i>boolean</i>): If simple gravity is true, each object is accelerated towards negative z axis. If false, it uses universal law of gravitation</p></li><li><p>G (<i>float</i>): Gravitational</p></li></ol>
+<h2>Material (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Material.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>specularColour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>diffuseColour (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>reflectance (<i>float</i>): </p></li><li><p>shininess (<i>float</i>): </p></li></ol>
+<h2>Boid (Not Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Boid.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>velocity (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li><li><p>minSpeed (<i>float</i>): </p></li><li><p>lengthAwayGroupSquared (<i>float</i>): </p></li><li><p>lengthAwayMinSquared (<i>float</i>): </p></li><li><p>antiCollideScale (<i>float</i>): </p></li><li><p>perceivedCenterScale (<i>float</i>): </p></li><li><p>velocityMatchScale (<i>float</i>): </p></li><li><p>boundScale (<i>float</i>): </p></li><li><p>speed (<i>float</i>): </p></li><li><p>radius (<i>float</i>): </p></li><li><p>goal (<i>com.boc_dev.maths.objects.vector.Vec3f</i>): </p></li></ol>
+<h2>Text (Renderable)</h2>
+<p><b>Description:</b> </i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.components.Text.java</p>
+<p><b>Fields:</b></p>
+<ol><li><p>fontAlignment (<i>FontAlignment</i>): </p></li><li><p>fontSize (<i>float</i>): </p></li><li><p>fontName (<i>String</i>): </p></li><li><p>text (<i>String</i>): </p></li></ol>
+</details>
+<details><summary>Enumerations</summary><h2>SkyboxType</h2><p><b>Description:</b> Type of object used for the skybox.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.SkyboxType.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>SPHERE</li><li>CUBE</li></ol><h2>RigidBodyObjectType</h2><p><b>Description:</b> Type of rigid body created, used in rigid body sim to generate the moment of inertia tensor.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.RigidBodyObjectType.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>CUBOID</li><li>SPHERE</li><li>SPHERE_INNER</li><li>NONE</li></ol><h2>CameraObjectType</h2><p><b>Description:</b> Camera type. Primary is the one used as the main camera. FBO is a secondary camera that can be used to create textures to be rendered to an object.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.CameraObjectType.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>PRIMARY</li><li>FBO</li></ol><h2>CameraProjectionType</h2><p><b>Description:</b> Type of projection matrix used for camera. Perspective produces a normal 3D camera view, orthographic produces a 2D view.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.CameraProjectionType.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>PERSPECTIVE</li><li>ORTHOGRAPHIC</li></ol><h2>Orientation</h2><p><b>Description:</b> Direction in which a list positions the objects within it.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.Orientation.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>HORIZONTAL</li><li>VERTICLE</li></ol><h2>LightingType</h2><p><b>Description:</b> Type of light create in the graphics engine.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.LightingType.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>POINT</li><li>SPOT</li><li>DIRECTIONAL</li></ol><h2>FontAlignment</h2><p><b>Description:</b> Used to set allignment of text.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.FontAlignment.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>BEGIN</li><li>END</li><li>CENTER</li></ol><h2>CollisionShape</h2><p><b>Description:</b> Shape used to define how it responds to a collision with another collision shape.</i></p>
+<p><b>Class:</b> com.boc_dev.lge_model.generated.enums.CollisionShape.java</p>
+<p><b>Values:</b></p>
+<ol><p><li>SPEHER</li><li>CUBOID</li></ol></details>
 
   
 </details>
