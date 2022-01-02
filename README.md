@@ -15,6 +15,8 @@
   <img src="https://img.shields.io/badge/Lua-00ADD8?logo=lua&logoColor=white" />
 </p>
 
+![Show Reel](images/titleScreen.png?raw=true)
+
 <details>
   <summary>Show Reel</summary>
   
@@ -25,7 +27,6 @@
 </p>
 
 
-![Show Reel](images/titleScreen.png?raw=true)
 ![Infinite Terrain Generation](images/boidsStill.png?raw=true)
 ![Infinite Terrain Generation](images/instanceStill.png?raw=true)
 
